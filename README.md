@@ -2,7 +2,7 @@
 A simple randomizer that chooses one option from the set insered by the user.
 
 ## Usage
-Simply compile with gcc the source code:
+Just compile the source code with `gcc` or your favourite C compiler:
 
 ```shell
 gcc -o randomizer ./randomizer.c
@@ -27,4 +27,5 @@ I ran this drawing 268435456 times.
 Pizza won 71342503 times.
 Sushi won 97898064 times.
 Fast food won 99194889 times.
+So I’d say Fast food won.
 ```
