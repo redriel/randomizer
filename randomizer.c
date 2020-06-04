@@ -60,14 +60,14 @@ int main(int argc, char *argv[])
 
 		// Sorting the array in descending order
 		for (i = 0; i < options_num; ++i) {
-        	for (k = i + 1; k < options_num; ++k) {
-                if (results[i] > results[k]) {
-                   	temp =  results[i];
-                    results[i] = results[k];
-                    results[k] = temp;
-                }
-            }
-        }
+			for (k = i + 1; k < options_num; ++k) {
+				if (results[i] > results[k]) {
+					temp =  results[i];
+					results[i] = results[k];
+					results[k] = temp;
+				}
+			}
+		}
 
 		for (i = 0; i < options_num; i++) {
 			printf("%s won %d times.\n", options[i], results[i]);
