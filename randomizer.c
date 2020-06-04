@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 		printf("Computing...\n");
 
 		int results[options_num];
-		int choice = 0, i = 0, index_max = 0;
+		int choice = 0, i = 0, k = 0, index_max = 0, temp = 0;
 
 		// Setting every option to zero
 		for (i = 0; i < options_num; i++) {
@@ -57,6 +57,17 @@ int main(int argc, char *argv[])
 		}
 
 		printf("I ran this drawing %d times.\n", i);
+
+		// Sorting the array in descending order
+		for (i = 0; i < options_num; ++i) {
+        	for (k = i + 1; k < options_num; ++k) {
+                if (results[i] > results[k]) {
+                   	temp =  results[i];
+                    results[i] = results[k];
+                    results[k] = temp;
+                }
+            }
+        }
 
 		for (i = 0; i < options_num; i++) {
 			printf("%s won %d times.\n", options[i], results[i]);
