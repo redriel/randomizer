@@ -23,9 +23,9 @@ Option 3: >
 
 After few seconds, the program will show the results:
 ```shell
-I ran this drawing 268435456 times.
-Pizza won 71342503 times.
-Sushi won 97898064 times.
-Fast food won 99194889 times.
-So I’d say Fast food won.
+I ran this drawing 26840 times.
+Pizza won 24.61% times.
+Sushi won 35.44% times.
+Tacos won 39.95% times.
+The winner is Tacos.
 ```
