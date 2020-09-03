@@ -1,3 +1,14 @@
+/**
+  *
+  * This is a free, opne-source code under no license.
+  *
+  *
+  * @version: 1.0.1
+  * @date: 2020/08/03
+  * @author: Gabriele Lavorato
+  * This program randomly picks an option between the given ones.
+  */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -6,18 +17,11 @@
 
 /* Higly suggested not to increase this constant too much, 
 as numbers tend to group together with great values (billions) */
-#define ITERATIONS 26840
-#define BUFF_SIZE 32
-/* #define PBSTR "####################"
-#define PBWIDTH 20 */
+#define ITERATIONS 128
 
-/**
-  *
-  * @version: 1.0.0
-  * @date: 2019/12/11
-  * @author: Gabriele Lavorato
-  * This program randomly takes a decision between two given options.
-  */
+#define BUFF_SIZE 32
+//#define PBSTR "####################"
+//#define PBWIDTH 20 */
 
 /**
 * Generates a pseudorandom number between 0 and the value of options_num.
@@ -61,7 +65,7 @@ int main(int argc, char *argv[])
 			choice = (randomizer(options_num));
 			results[choice]++;
 			
-			/* Please read the comment at the end about the printProgress function */
+			// Please read the comment at the end about the printProgress function
 			/* if(i >= ITERATIONS / progressDividend) {
 				progressDividend--;
 				percentage = percentage + 5;
